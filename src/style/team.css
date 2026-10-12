@@ -1,0 +1,242 @@
+/* ============ HERO TIM ============ */
+
+.team-hero {
+    position: relative;
+    padding: calc(var(--nav-h) + 96px) 0 108px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.team-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(900px 480px at 50% -10%, rgba(212, 71, 31, 0.09), transparent 60%),
+        radial-gradient(800px 420px at 50% 120%, rgba(22, 166, 222, 0.06), transparent 60%);
+    pointer-events: none;
+}
+
+.team-hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-ghost {
+    position: absolute;
+    left: 50%;
+    bottom: -4%;
+    z-index: 0;
+    transform: translateX(-50%);
+    font-family: var(--font-display);
+    font-size: clamp(7rem, 20vw, 16rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--line);
+    opacity: 0.6;
+    pointer-events: none;
+    user-select: none;
+}
+
+.team-overline {
+    justify-content: center;
+}
+
+.team-hero-title {
+    font-size: clamp(2.7rem, 6vw, 4.9rem);
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    margin: 22px auto 20px;
+    max-width: 18ch;
+}
+
+.team-hero-title em {
+    color: var(--terra);
+}
+
+.team-hero-desc {
+    margin: 0 auto 34px;
+    max-width: 58ch;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.team-hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+@media (max-width: 576px) {
+    .team-hero {
+        padding: calc(var(--nav-h) + 58px) 0 80px;
+    }
+}
+
+/* ============ LIST ANGGOTA ============ */
+
+.team-list-card {
+    padding: 38px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background: var(--card);
+}
+
+.team-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.team-list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--paper);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease),
+        border-color 0.3s;
+}
+
+.team-list-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--terra);
+    box-shadow: var(--shadow-soft);
+}
+
+.team-number {
+    font-family: var(--font-label);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--terra);
+}
+
+.team-list-name {
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+    .team-list-card {
+        padding: 24px;
+    }
+}
+
+/* ============ KARTU PROFIL ============ */
+
+.team-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    padding: 36px 24px 28px;
+    text-align: center;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background: var(--card);
+    overflow: hidden;
+    transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease),
+        border-color 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-soft);
+}
+
+.team-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: var(--terra);
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s var(--ease);
+}
+
+.team-card:hover::after {
+    opacity: 1;
+    width: 120px;
+}
+
+.portrait {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--paper-2);
+    outline: 1px solid var(--line-strong);
+    outline-offset: 5px;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease);
+}
+
+.team-card:hover .portrait img {
+    transform: scale(1.07);
+}
+
+.member-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.member-role {
+    padding: 6px 14px;
+    border: 1px solid rgba(212, 71, 31, 0.28);
+    border-radius: 999px;
+    background: rgba(212, 71, 31, 0.07);
+    font-family: var(--font-label);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terra);
+}
+
+.member-ig {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.btn-follow {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 11px 30px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-label);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s var(--ease),
+        box-shadow 0.3s var(--ease);
+}
+
+.btn-follow:hover {
+    background: var(--terra);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px -14px rgba(212, 71, 31, 0.65);
+}

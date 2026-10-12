@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Holic — Solusi Fotokopi &amp; Printing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style/base.css">
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg site-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand brand" href="#home" aria-label="FC Holic">
+                <img src="src/assets/logoHolic.png" alt="Logo FC Holic">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav nav-center mx-auto">
+                    <li class="nav-item"><a class="nav-link navlink active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link navlink" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link navlink" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link navlink" href="#harga">Harga</a></li>
+                    <li class="nav-item"><a class="nav-link navlink" href="#kontak">Kontak</a></li>
+                </ul>
+                <a class="btn-terra" href="src/page/team.html">Our Team <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header id="home" class="hero">
+        <span class="hero-ghost" aria-hidden="true">PRINT</span>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <p class="overline reveal">FC Holic · Fotokopi &amp; Cetak</p>
+                    <h1 class="hero-title reveal" style="--d:.05s">Cetak cepat, <em>hasil memikat.</em></h1>
+                    <p class="hero-desc reveal" style="--d:.1s">Fotokopi, print tugas, scan dokumen, jilid, hingga
+                        laminating — semua dikerjakan cepat, rapi, dan ramah di kantong.</p>
+                    <div class="hero-cta reveal" style="--d:.15s">
+                        <a class="btn-terra" href="#layanan">Lihat Layanan <span class="arrow">→</span></a>
+                        <a class="btn-line" href="#kontak">Hubungi Kami</a>
+                    </div>
+                    <div class="hero-tags reveal" style="--d:.2s">
+                        <span class="tag">Harga bersahabat</span>
+                        <span class="tag">Siap deadline</span>
+                        <span class="tag">Satu tempat</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual reveal" style="--d:.15s">
+                        <img class="hero-main-img" src="src/assets/logoNew.png" alt="Ilustrasi printer FC Holic">
+                        <figure class="hero-photo a">
+                            <img src="src/assets/cetak-foto.jpeg" alt="Hasil cetak foto">
+                            <figcaption>Cetak Foto</figcaption>
+                        </figure>
+                        <figure class="hero-photo b">
+                            <img src="src/assets/jilid.jpeg" alt="Hasil jilid rapi">
+                            <figcaption>Jilid Rapih</figcaption>
+                        </figure>
+                        <span class="hero-stamp">Scan &amp; Kirim File<br>Gratis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span>Fotokopi</span><b>✦</b>
+                <span>Print Dokumen</span><b>✦</b>
+                <span>Cetak Foto</span><b>✦</b>
+                <span>Scan &amp; Email</span><b>✦</b>
+                <span>Jilid Binding</span><b>✦</b>
+                <span>Laminating</span><b>✦</b>
+                <span>Kartu Nama</span><b>✦</b>
+                <span>Undangan</span><b>✦</b>
+                <span>Brosur</span><b>✦</b>
+                <span>Stiker</span><b>✦</b>
+            </div>
+            <div class="marquee-group">
+                <span>Fotokopi</span><b>✦</b>
+                <span>Print Dokumen</span><b>✦</b>
+                <span>Cetak Foto</span><b>✦</b>
+                <span>Scan &amp; Email</span><b>✦</b>
+                <span>Jilid Binding</span><b>✦</b>
+                <span>Laminating</span><b>✦</b>
+                <span>Kartu Nama</span><b>✦</b>
+                <span>Undangan</span><b>✦</b>
+                <span>Brosur</span><b>✦</b>
+                <span>Stiker</span><b>✦</b>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== LAYANAN ========== -->
+    <section id="layanan" class="section section-alt">
+        <div class="container">
+            <div class="sec-head reveal">
+                <p class="overline"><span class="sec-no">01</span> &nbsp;Layanan</p>
+                <h2 class="sec-title">Semua kebutuhan cetak jadi <em>satu tempat.</em></h2>
+                <p class="sec-desc">Dari fotokopi tugas sampai cetak undangan — semua dikerjakan dengan teliti, tuntas,
+                    dan tepat waktu.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="service-card reveal">
+                        <div class="service-thumb">
+                            <img src="src/assets/foto-kpi.jpeg" alt="Fotokopi dokumen">
+                        </div>
+                        <div class="service-meta"><span class="service-num">01</span></div>
+                        <h3>Fotokopi</h3>
+                        <p>Copy cepat dan jernih untuk dokumen, buku, modul — mau berapa lembar pun tetap rapi.</p>
+                        <div class="service-foot">Cepat &amp; Jernih <span class="arrow">→</span></div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="service-card reveal" style="--d:.08s">
+                        <div class="service-thumb">
+                            <img src="src/assets/fotoKopi.jpeg" alt="Print dokumen">
+                        </div>
+                        <div class="service-meta"><span class="service-num">02</span></div>
+                        <h3>Print Dokumen</h3>
+                        <p>Print hitam putih &amp; warna dengan hasil tajam untuk tugas, kerjaan, dan kebutuhan harian.</p>
+                        <div class="service-foot">Tajam &amp; Padu <span class="arrow">→</span></div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="service-card reveal" style="--d:.16s">
+                        <div class="service-thumb">
+                            <img src="src/assets/cetak-foto.jpeg" alt="Cetak foto">
+                        </div>
+                        <div class="service-meta"><span class="service-num">03</span></div>
+                        <h3>Cetak Foto</h3>
+                        <p>Foto berbagai ukuran dengan warna cerah dan awet — pas dari foto album sampai pajangan.</p>
+                        <div class="service-foot">Warna Cerah <span class="arrow">→</span></div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="service-card reveal">
+                        <div class="service-thumb">
+                            <img src="src/assets/jilid-binding.jpeg" alt="Jilid dan binding">
+                        </div>
+                        <div class="service-meta"><span class="service-num">04</span></div>
+                        <h3>Jilid &amp; Binding</h3>
+                        <p>Spiral, lem, softcover — jilidan kuat, rapi, dan tahan banting.</p>
+                        <div class="service-foot">Kuat &amp; Rapih <span class="arrow">→</span></div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="service-card reveal" style="--d:.08s">
+                        <div class="service-thumb">
+                            <img src="src/assets/scanDokumen.jpeg" alt="Scan dokumen">
+                        </div>
+                        <div class="service-meta"><span class="service-num">05</span></div>
+                        <h3>Scan Dokumen</h3>
+                        <p>Hasil scan jernih, langsung siap dikirim lewat email atau WhatsApp.</p>
+                        <div class="service-foot">Jernih &amp; Cepat <span class="arrow">→</span></div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="service-card reveal" style="--d:.16s">
+                        <div class="service-thumb">
+                            <img src="src/assets/icon-kartunama.jpeg" alt="Cetak kartu nama">
+                        </div>
+                        <div class="service-meta"><span class="service-num">06</span></div>
+                        <h3>Cetak Kartu Nama</h3>
+                        <p>Kartu nama premium untuk kesan pertama yang kuat — dari bahan standar sampai mewah.</p>
+                        <div class="service-foot">Kesan Pertama <span class="arrow">→</span></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERI ========== -->
+    <section id="galeri" class="section">
+        <div class="container">
+            <div class="sec-head reveal">
+                <p class="overline"><span class="sec-no">02</span> &nbsp;Galeri</p>
+                <h2 class="sec-title">Jejak hasil karya <em>kami.</em></h2>
+                <p class="sec-desc">Sebagian cetakan yang keluar dari mesin kami setiap hari — dari tugas sekolah sampai
+                    momen spesial.</p>
+            </div>
+
+            <div class="collage">
+                <figure class="collage-item ar-16-10 reveal">
+                    <img src="src/assets/dokumen.jpeg" alt="Cetak dokumen">
+                    <figcaption class="collage-cap">Cetak Dokumen →</figcaption>
+                </figure>
+                <figure class="collage-item ar-1-1 reveal" style="--d:.05s">
+                    <img src="src/assets/foto-kpi.jpeg" alt="Fotokopi">
+                    <figcaption class="collage-cap">Fotokopi →</figcaption>
+                </figure>
+                <figure class="collage-item ar-3-4 reveal" style="--d:.1s">
+                    <img src="src/assets/cetak-foto.jpeg" alt="Cetak foto">
+                    <figcaption class="collage-cap">Cetak Foto →</figcaption>
+                </figure>
+                <figure class="collage-item ar-1-1 reveal">
+                    <img src="src/assets/kartuNama.jpeg" alt="Kartu nama">
+                    <figcaption class="collage-cap">Kartu Nama →</figcaption>
+                </figure>
+                <figure class="collage-item ar-4-3 reveal" style="--d:.05s">
+                    <img src="src/assets/jilid.jpeg" alt="Jilid binding">
+                    <figcaption class="collage-cap">Jilid / Binding →</figcaption>
+                </figure>
+                <figure class="collage-item ar-3-4 reveal" style="--d:.1s">
+                    <img src="src/assets/undangan.jpeg" alt="Undangan">
+                    <figcaption class="collage-cap">Undangan →</figcaption>
+                </figure>
+                <figure class="collage-item ar-16-10 reveal">
+                    <img src="src/assets/brosur.jpeg" alt="Brosur">
+                    <figcaption class="collage-cap">Brosur →</figcaption>
+                </figure>
+                <figure class="collage-item ar-4-3 reveal" style="--d:.05s">
+                    <img src="src/assets/stiker.jpeg" alt="Stiker dan label">
+                    <figcaption class="collage-cap">Stiker &amp; Label →</figcaption>
+                </figure>
+                <figure class="collage-item ar-1-1 reveal" style="--d:.1s">
+                    <img src="src/assets/cetak-buku.jpeg" alt="Cetak buku">
+                    <figcaption class="collage-cap">Cetak Buku →</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HARGA ========== -->
+    <section id="harga" class="section section-alt">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="sec-head price-intro reveal">
+                        <p class="overline"><span class="sec-no">03</span> &nbsp;Harga</p>
+                        <h2 class="sec-title">Harga bersahabat, <em>kualitas juara.</em></h2>
+                        <p class="sec-desc">Tarif utama kami. Harga bisa berubah sewaktu-waktu — jangan ragu
+                            tanya-tanya dulu sebelum cetak.</p>
+                        <div class="pay-strip">
+                            <span class="label">Pembayaran</span>
+                            <span class="pay-chip">Cash</span>
+                            <span class="pay-chip">QRIS</span>
+                            <span class="pay-chip">Transfer Bank</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="price-grid">
+                        <div class="price-card reveal">
+                            <div class="price-head">
+                                <span class="price-ico"><img src="src/assets/logoFotoCopy.png" alt=""></span>
+                                <h3>Fotokopi &amp; Print</h3>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Fotocopy Hitam Putih</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 200<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Print Hitam Putih</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 500<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Print Warna</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 2.000<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Print Foto 4R</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 3.000<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Print Foto 5R</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 5.000<span>/ lembar</span></span>
+                            </div>
+                        </div>
+
+                        <div class="price-card reveal" style="--d:.08s">
+                            <div class="price-head">
+                                <span class="price-ico"><img src="src/assets/logoJilid.png" alt=""></span>
+                                <h3>Jilid &amp; Finishing</h3>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Jilid Biasa (Stapler)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 3.000<span>/ buku</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Jilid Spiral</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 5.000<span>/ buku</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Jilid Lem (Softcover)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 15.000<span>/ buku</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Laminating A4</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 5.000<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Laminating A3</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 10.000<span>/ lembar</span></span>
+                            </div>
+                        </div>
+
+                        <div class="price-card reveal">
+                            <div class="price-head">
+                                <span class="price-ico"><img src="src/assets/logoScan.png" alt=""></span>
+                                <h3>Scan &amp; Digital</h3>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Scan Dokumen (BW)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 2.000<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Scan Dokumen (Color)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 3.000<span>/ lembar</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Upload File Online</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Gratis<span>-</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Copy File ke Flashdisk</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 5.000<span>/ kali</span></span>
+                            </div>
+                        </div>
+
+                        <div class="price-card reveal" style="--d:.08s">
+                            <div class="price-head">
+                                <span class="price-ico"><img src="src/assets/logoKhusus.png" alt=""></span>
+                                <h3>Cetakan Khusus</h3>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Kartu Nama (100 pcs)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 50.000<span>/ paket</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Undangan (100 pcs)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 150.000<span>/ paket</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Brosur A5 (100 pcs)</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 100.000<span>/ paket</span></span>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Stiker Custom</span>
+                                <span class="price-dots"></span>
+                                <span class="price-val">Rp 10.000<span>/ lembar</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KONTAK ========== -->
+    <section id="kontak" class="section">
+        <div class="container">
+            <div class="sec-head reveal">
+                <p class="overline"><span class="sec-no">04</span> &nbsp;Kontak</p>
+                <h2 class="sec-title">Ada yang mau dicetak? <em>Ngobrol yuk.</em></h2>
+                <p class="sec-desc">Kirim pesan lewat form, atau langsung hubungi kami. Pasti dibales cepat.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="info-card reveal">
+                        <div class="info-item">
+                            <span class="info-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"></path>
+                                    <circle cx="12" cy="10" r="2.6"></circle>
+                                </svg>
+                            </span>
+                            <div class="info-text">
+                                <h4>Alamat</h4>
+                                <p>Jl. Raya Bogor No. 123, Kota Bogor, Jawa Barat</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 4h4l1.5 4-2 1.5a12 12 0 0 0 6 6L16 13l4 1.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4Z"></path>
+                                </svg>
+                            </span>
+                            <div class="info-text">
+                                <h4>Telepon / WhatsApp</h4>
+                                <p>+62 812-3456-7890</p>
+                                <p>+62 878-9012-3456</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                    <path d="m4 7 8 6 8-6"></path>
+                                </svg>
+                            </span>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p>fcholic@example.com</p>
+                                <p>cs@fcholic.id</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-ico">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <path d="M12 7v5l3 2"></path>
+                                </svg>
+                            </span>
+                            <div class="info-text">
+                                <h4>Jam Operasional</h4>
+                                <p>Senin - Sabtu : 08.00 - 21.00</p>
+                                <p>Minggu &amp; Libur Nasional : 09.00 - 17.00</p>
+                            </div>
+                        </div>
+                        <div class="socials info-socials">
+                            <a class="social-pill" href="#">Instagram</a>
+                            <a class="social-pill" href="#">Facebook</a>
+                            <a class="social-pill" href="#">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="form-card reveal" style="--d:.1s">
+                        <h3>Kirim Pesan</h3>
+                        <form id="form-kontak">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="field">
+                                        <label for="nama">Nama Lengkap</label>
+                                        <input type="text" id="nama" placeholder="Nama kamu" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="field">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="nama@email.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="field">
+                                        <label for="telepon">No. Telepon / WhatsApp</label>
+                                        <input type="text" id="telepon" placeholder="08xx-xxxx-xxxx">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="field">
+                                        <label for="subjek">Subjek / Layanan</label>
+                                        <input type="text" id="subjek" placeholder="Misal: print skripsi">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="field">
+                                        <label for="pesan">Pesan</label>
+                                        <textarea id="pesan" rows="4" placeholder="Tulis kebutuhanmu di sini..." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-terra form-btn">Kirim Pesan <span class="arrow">→</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="cmyk" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="container footer-main">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="footer-brand">FC <em>Holic</em></div>
+                    <p class="footer-desc">Solusi fotokopi, printing, dan jilid untuk tugas, kerjaan, dan momen spesial —
+                        cepat, rapi, harga bersahabat.</p>
+                    <div class="socials">
+                        <a class="social-pill" href="#">Instagram</a>
+                        <a class="social-pill" href="#">Facebook</a>
+                        <a class="social-pill" href="#">TikTok</a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                    <p class="footer-title">Site Map</p>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#harga">Harga</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="footer-title">Layanan</p>
+                    <ul class="footer-links">
+                        <li><a href="#layanan">Fotokopi</a></li>
+                        <li><a href="#layanan">Print &amp; Scan</a></li>
+                        <li><a href="#layanan">Jilid &amp; Laminating</a></li>
+                        <li><a href="#layanan">Cetak Khusus</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 FC Holic. All rights reserved.</p>
+                <a class="backtop" href="#home">Kembali ke atas ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
